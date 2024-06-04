@@ -1,67 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wishlist Project</title>
+    <title>COMPRABOBA</title>
+    <link rel="icon" href="images/logotipo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header com a Logo -->
     <header>
+        <img src="images/logo.png" alt="Logo do Compraboba" class="logo">
         <nav class="navbar">
-            <a href="#" class="logo">Brand Logo</a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
+                <li><a href="#features">Funcionalidades</a></li>
                 <li><a href="#contact">Contato</a></li>
                 <li><a href="#login" id="login-link">Login</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="search-bar">
-            <input type="text" placeholder="O que você está procurando?" />
-            <button>Buscar</button>
-        </div>
-        <div class="carousel">
-            <div class="slides">
-                <img src="banner1.jpg" alt="Banner 1">
-                <img src="banner2.jpg" alt="Banner 2">
-                <img src="banner3.jpg" alt="Banner 3">
-            </div>
+    <!-- Barra de Pesquisa -->
+    <section id="search-section">
+        <input type="text" placeholder="Encontre os melhores preços..." id="search-bar">
+        <button>Buscar</button>
+    </section>
+
+    <!-- Carrossel de Imagens -->
+    <section id="carousel">
+        <div class="carousel-item"><img src="images/banner1.jpg" alt="Banner 1"></div>
+        <div class="carousel-item"><img src="images/banner6.jpg" alt="Banner 2"></div>
+        <div class="carousel-item"><img src="images/banner11.jpg" alt="Banner 3"></div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about">
+        <h2>Como encontrar o melhor preço para seus "recebidos pagos"?</h2>
+        <div class="process">
+            <img src="images/banner7.jpg" alt="Processo 1">
+            <img src="images/banner4.jpg" alt="Processo 2">
+            <img src="images/banner10.jpg" alt="Processo 3">
         </div>
     </section>
 
-    <section class="purpose" id="about">
-        <h2>Nosso Propósito</h2>
-        <div class="purpose-content">
-            <div class="purpose-item">
-                <img src="process1.jpg" alt="Processo 1">
-                <p>Comparar preços de todos os sites de acordo com o que você precisa.</p>
-            </div>
-            <div class="purpose-item">
-                <img src="process2.jpg" alt="Processo 2">
-                <p>Para mulheres antenadas nas novidades das redes sociais.</p>
-            </div>
-            <div class="purpose-item">
-                <img src="process3.jpg" alt="Processo 3">
-                <p>Tudo que uma mulher pode precisar, de itens úteis até as mais variadas futilidades.</p>
-            </div>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Wishlist Project. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Compraboba. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Modal de Login -->
     <div id="login-modal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <h2>Login</h2>
             <form>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Senha" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
                 <button type="submit">Entrar</button>
             </form>
         </div>
